@@ -276,7 +276,7 @@ background-image: linear-gradient(to bottom, #882222, #111111);;
 		$html .= "</div>\n";
 		$html .= "</div>\n";
 		$html .= "</div>\n";
-	
+
 		return $html;
 	} /* }}} */
 
@@ -407,11 +407,15 @@ background-image: linear-gradient(to bottom, #882222, #111111);;
 				$menuitems['help'] = array('link'=>'../out/out.Help.php?context='.$tmp[1], 'label'=>"help");
 			}
 			/* Check if hook exists because otherwise callHook() will override $menuitems */
-			foreach($hookObjs as $hookObj) {
-				if (method_exists($hookObj, 'globalNavigationBar')) {
-					$menuitems = $hookObj->globalNavigationBar($this, $menuitems);
-				}
-			}
+            if (isset($hookObjs))
+            {
+                foreach($hookObjs as $hookObj) {
+                    if (method_exists($hookObj, 'globalNavigationBar')) {
+                        $menuitems = $hookObj->globalNavigationBar($this, $menuitems);
+                    }
+                }
+            }
+
 			foreach($menuitems as $menuitem) {
 				if(!empty($menuitem['children'])) {
 					echo "    <li class=\"dropdown\">\n";
@@ -467,7 +471,7 @@ background-image: linear-gradient(to bottom, #882222, #111111);;
 
 		return '<ul class="breadcrumb">'.$txtpath.'</ul>';
 	} /* }}} */
-	
+
 	function pageNavigation($pageTitle, $pageType=null, $extra=null) { /* {{{ */
 
 		if ($pageType!=null && strcasecmp($pageType, "noNav")) {
@@ -655,8 +659,8 @@ background-image: linear-gradient(to bottom, #882222, #111111);;
 		$menuitems = array();
 		if ($this->params['user']->isAdmin() || !$this->params['disableselfedit'])
 			$menuitems['edit_user_details'] = array('link'=>"../out/out.EditUserData.php", 'label'=>'edit_user_details');
-		
-		if (!$this->params['user']->isAdmin()) 
+
+		if (!$this->params['user']->isAdmin())
 			$menuitems['edit_default_keywords'] = array('link'=>"../out/out.UserDefaultKeywords.php", 'label'=>'edit_default_keywords');
 
 		$menuitems['edit_notify'] = array('link'=>"../out/out.ManageNotify.php", 'label'=>'edit_existing_notify');
@@ -664,7 +668,7 @@ background-image: linear-gradient(to bottom, #882222, #111111);;
 		if ($this->params['enableusersview']){
 			$menuitems['users'] = array('link'=>"../out/out.UsrView.php", 'label'=>'users');
 			$menuitems['groups'] = array('link'=>"../out/out.GroupView.php", 'label'=>'groups');
-		}		
+		}
 
 		/* Check if hook exists because otherwise callHook() will override $menuitems */
 		if($this->hasHook('accountNavigationBar'))
@@ -714,7 +718,7 @@ background-image: linear-gradient(to bottom, #882222, #111111);;
 		$menuitems['user_group_management']['children']['user_management'] = array('link'=>"../out/out.UsrMgr.php", 'label'=>'user_management');
 		$menuitems['user_group_management']['children']['group_management'] = array('link'=>"../out/out.GroupMgr.php", 'label'=>'group_management');
 		$menuitems['user_group_management']['children']['user_list'] = array('link'=>"../out/out.UserList.php", 'label'=>'user_list');
-		
+
 		$menuitems['definitions'] = array('link'=>"#", 'label'=>'definitions');
 		$menuitems['definitions']['children']['default_keywords'] = array('link'=>"../out/out.DefaultKeywords.php", 'label'=>'global_default_keywords');
 		$menuitems['definitions']['children']['document_categories'] = array('link'=>"../out/out.Categories.php", 'label'=>'global_document_categories');
@@ -759,7 +763,7 @@ background-image: linear-gradient(to bottom, #882222, #111111);;
 		echo "</div>\n";
 		return;
 	} /* }}} */
-	
+
 	private function calendarOldNavigationBar($d){ /* {{{ */
 		$ds="&day=".$d[0]."&month=".$d[1]."&year=".$d[2];
 		echo "<id=\"first\"><a href=\"../out/out.CalendarOld.php?mode=y\" class=\"brand\">".getMLText("calendar")."</a>\n";
@@ -774,7 +778,7 @@ background-image: linear-gradient(to bottom, #882222, #111111);;
 		echo "</ul>\n";
 		echo "</div>\n";
 		return;
-	
+
 	} /* }}} */
 
 	private function calendarNavigationBar($d){ /* {{{ */
@@ -795,7 +799,7 @@ background-image: linear-gradient(to bottom, #882222, #111111);;
 		echo "</ul>\n";
 		echo "</div>\n";
 		return;
-	
+
 	} /* }}} */
 
 	function pageList($pageNumber, $totalPages, $baseURI, $params) { /* {{{ */
@@ -1210,7 +1214,7 @@ $(document).ready(function() {
 	} /* }}} */
 
 	function __printDateChooser($defDate = -1, $varName) { /* {{{ */
-	
+
 		if ($defDate == -1)
 			$defDate = mktime();
 		$day   = date("d", $defDate);
@@ -1235,7 +1239,7 @@ $(document).ready(function() {
 			print ">" . $i . "</option>\n";
 		}
 		print "</select> \n";
-		print "<select name=\"" . $varName . "year\">\n";	
+		print "<select name=\"" . $varName . "year\">\n";
 		for ($i = $year-5 ; $i <= $year+5 ; $i++)
 		{
 			print "<option value=\"" . $i . "\"";
@@ -1418,7 +1422,7 @@ $(document).ready(function() {
 	} /* }}} */
 
 	function printKeywordChooserHtml($formName, $keywords='', $fieldname='keywords') { /* {{{ */
-		echo self::getKeywordChooserHtml($formName, $keywords, $fieldname); 
+		echo self::getKeywordChooserHtml($formName, $keywords, $fieldname);
 	} /* }}} */
 
 	function getKeywordChooserHtml($formName, $keywords='', $fieldname='keywords') { /* {{{ */
@@ -1796,7 +1800,7 @@ $(document).ready(function() {
 			}
 		}
 
-		if(!$plain) {	
+		if(!$plain) {
 			$this->htmlStartPage($pagetitle);
 			$this->globalNavigation();
 			$this->contentStart();
@@ -1806,19 +1810,19 @@ $(document).ready(function() {
 		print "<h4>".getMLText('error')."!</h4>";
 		print htmlspecialchars($error);
 		print "</div>";
-		if(!$plain) {	
+		if(!$plain) {
 			print "<div><button class=\"btn history-back\">".getMLText('back')."</button></div>";
 
 			$this->contentEnd();
 			$this->htmlEndPage();
 		}
-		
+
 		add_log_line(" UI::exitError error=".$error." pagetitle=".$pagetitle, PEAR_LOG_ERR);
 
 		if($noexit)
 			return;
 
-		exit;	
+		exit;
 	} /* }}} */
 
 	function printNewTreeNavigation($folderid=0, $accessmode=M_READ, $showdocs=0, $formid='form1', $expandtree=0, $orderby='') { /* {{{ */
@@ -1923,7 +1927,7 @@ $(document).ready(function() {
 			} else {
 				$tree[] = $node;
 			}
-			
+
 		} else {
 			if($root = $this->params['dms']->getFolder($this->params['rootfolderid']))
 				$tree = array(array('label'=>$root->getName(), 'id'=>$root->getID(), 'load_on_demand'=>false, 'is_folder'=>true));
@@ -1984,13 +1988,13 @@ $(function() {
 				/* folderSelectedXXXX() can still be set, e.g. for the main tree
 				 * to update the folder list.
 				 */
-				if (typeof folderSelected<?= $formid ?> === 'function') { 
+				if (typeof folderSelected<?= $formid ?> === 'function') {
 					folderSelected<?= $formid ?>(node.id, node.name);
 				}
 				treeFolderSelected('<?= $formid ?>', node.id, node.name);
 			} else {
 <?php if($showdocs) { ?>
-				if (typeof documentSelected<?= $formid ?> === 'function') { 
+				if (typeof documentSelected<?= $formid ?> === 'function') {
 					documentSelected<?= $formid ?>(node.id, node.name);
 				}
 				treeDocumentSelected('<?= $formid ?>', node.id, node.name);
@@ -2035,7 +2039,7 @@ $(function() {
 
 		$folder = $dms->getFolder($folderid);
 		if (!is_object($folder)) return '';
-		
+
 		$subfolders = $folder->getSubFolders($orderby);
 		$subfolders = SeedDMS_Core_DMS::filterAccess($subfolders, $user, M_READ);
 		$tree = array();
@@ -2641,7 +2645,7 @@ $('body').on('click', '[id^=\"table-row-folder\"] td:nth-child(2)', function(ev)
 					$needwkflaction = $latestContent->needsWorkflowAction($user);
 				}
 			}
-			
+
 			/* Retrieve attacheѕ files */
 			$files = $document->getDocumentFiles($latestContent->getVersion());
 			$files = SeedDMS_Core_DMS::filterDocumentFiles($user, $files);
@@ -2888,7 +2892,7 @@ $('body').on('click', '[id^=\"table-row-folder\"] td:nth-child(2)', function(ev)
 		$plain = $this->params['plain'];
 		$noexit = $this->params['noexit'];
 
-		if(!$plain) {	
+		if(!$plain) {
 			$this->htmlStartPage($pagetitle);
 			$this->globalNavigation();
 			$this->contentStart();
@@ -2899,16 +2903,16 @@ $('body').on('click', '[id^=\"table-row-folder\"] td:nth-child(2)', function(ev)
 		print htmlspecialchars($errormsg);
 		print "</div>";
 		print "<div><button class=\"btn history-back\">".getMLText('back')."</button></div>";
-		
+
 		$this->contentEnd();
 		$this->htmlEndPage();
-		
+
 		add_log_line(" UI::exitError error=".$errormsg." pagetitle=".$pagetitle, PEAR_LOG_ERR);
 
 		if($noexit)
 			return;
 
-		exit;	
+		exit;
 	} /* }}} */
 
 	/**
@@ -3228,7 +3232,7 @@ $(document).ready(function() {
 		timeline = new links.Timeline(document.getElementById('timeline'), options);
 		links.events.addListener(timeline, 'select', onselect);
 		$.getJSON(
-			'<?php echo $timelineurl ?>', 
+			'<?php echo $timelineurl ?>',
 			function(data) {
 				$.each( data, function( key, val ) {
 					val.start = new Date(val.start);
