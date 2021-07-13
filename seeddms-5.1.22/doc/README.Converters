@@ -1,0 +1,91 @@
+Conversion to text for fulltext search
+=======================================
+
+text/plain
+text/csv
+application/csv
+  cat '%s'
+
+application/pdf
+  pdftotext -nopgbrk %s - | sed -e 's/ [a-zA-Z0-9.]\{1\} / /g' -e 's/[0-9.]//g'
+
+application/vnd.openxmlformats-officedocument.wordprocessingml.document
+  docx2txt '%s' -
+
+application/msword
+  catdoc %s
+
+application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+  xlsx2csv %s
+
+application/vnd.ms-excel
+  xls2csv %s
+
+text/html
+  html2text %s
+
+Many office formats
+  unoconv -d document -f txt --stdout '%s'
+
+Conversion to pdf for pdf preview
+==================================
+
+text/plain
+text/csv
+application/csv
+application/vnd.oasis.opendocument.text
+application/msword
+application/vnd.wordperfect
+text/rtf
+  unoconv -d document -f pdf --stdout -v '%f' > '%o'
+
+image/png
+image/jpg
+image/jpeg
+  convert -f pdf -density 300 '%f' '%o'
+
+application/vnd.ms-powerpoint
+application/vnd.openxmlformats-officedocument.presentationml.presentation
+application/vnd.oasis.opendocument.presentation
+  unoconv -d presentation -f pdf --stdout -v '%f' > '%o'
+
+application/vnd.ms-excel
+application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+application/vnd.oasis.opendocument.spreadsheet
+  unoconv -d spreadsheet -f pdf --stdout -v '%f' > '%o'
+
+Conversion to png for preview images
+=====================================
+
+If you have problems running convert on PDF documents then read this page
+https://askubuntu.com/questions/1081895/trouble-with-batch-conversion-of-png-to-pdf-using-convert
+It basically instructs you to comment out the line
+
+<policy domain="coder" rights="none" pattern="PDF" />
+
+in /etc/ImageMagick-6/policy.xml
+
+image/jpg
+image/jpeg
+image/png
+  convert -resize %wx '%f' '%o'
+
+application/pdf
+  gs -dBATCH -dNOPAUSE -sDEVICE=png16m -dPDFFitPage -r72x72 -sOutputFile=- -dFirstPage=1 -dLastPage=1 -q '%f' | convert -resize %wx png:- '%o'
+
+text/plain
+  a2ps -1 -a1 -R -B -o - '%f' | gs -dBATCH -dNOPAUSE -sDEVICE=png16m -dFirstPage=1 -dLastPage=1 -dPDFFitPage -r72x72 -sOutputFile=- -q - | convert -resize %wx png:- '%o'
+
+application/msword
+application/vnd.oasis.opendocument.spreadsheet
+application/vnd.oasis.opendocument.text
+application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+application/vnd.ms-excel
+application/vnd.openxmlformats-officedocument.wordprocessingml.document
+text/rtf
+application/vnd.ms-powerpoint
+text/csv
+application/csv
+application/vnd.wordperfect
+  unoconv -d document -e PageRange=1 -f pdf --stdout -v '%f' | gs -dBATCH -dNOPAUSE -sDEVICE=pngalpha -dPDFFitPage -r72x72 -sOutputFile=- -dFirstPage=1 -dLastPage=1 -q - | convert -resize %wx png:- '%o'
+

@@ -1,0 +1,12 @@
+filter:
+  excluded_paths:
+    - 'tests/*'
+    - 'examples/*'
+
+tools:
+  external_code_coverage: true
+
+build:
+  environment:
+    php:
+      version: "7.0"
