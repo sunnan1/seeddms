@@ -132,7 +132,7 @@
     </edition>
 		<!-- enableNotificationAppRev: true to send notifation if a user is added as a reviewer or approver
 		-->
-    <notification enableNotificationAppRev="true" enableOwnerNotification="false" enableNotificationWorkflow="false">
+    <notification enableNotificationAppRev="true" enableOwnerNotification="true" enableNotificationWorkflow="true">
     </notification>
     <!-- coreDir: Path to SeedDMS_Core (optional)
        - luceneClassDir: Path to SeedDMS_Lucene (optional)
@@ -158,4 +158,4 @@
 
   </advanced>
 
-<extensions><extension name="example" disable="true"><parameter name="__disable__">1</parameter></extension></extensions></configuration>
+<extensions/></configuration>

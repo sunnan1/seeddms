@@ -9,3 +9,156 @@ Jul 13 11:22:30  [info] admin (::1) op.ExtensionMgr
 Jul 13 13:00:29  [info] -- (::1) op.Login
 Jul 13 13:26:44  [info] -- (172.20.24.125) op.Login
 Jul 13 13:40:57  [info] -- (172.20.27.55) op.Login
+Jul 13 13:49:53  [info] -- (172.20.24.125) op.Login
+Jul 13 13:50:32  [info] admin (172.20.24.125) op.GroupMgr&action=addgroup&name=Information & Communication Technology
+Jul 13 13:50:41  [info] admin (172.20.24.125) op.GroupMgr&action=addgroup&name=Human Resource
+Jul 13 13:50:52  [info] admin (172.20.24.125) op.GroupMgr?groupid=1&userid=1&action=addmember
+Jul 13 13:51:01  [info] admin (172.20.24.125) op.GroupMgr&action=addgroup&name=Finance
+Jul 13 13:51:30  [info] admin (172.20.24.125) op.GroupMgr&action=addgroup&name=Cardiology (Adult)
+Jul 13 13:51:39  [info] admin (172.20.24.125) op.GroupMgr&action=addgroup&name=Cardiology (Peads)
+Jul 13 13:51:53  [info] admin (172.20.24.125) op.GroupMgr&action=addgroup&name=Cardiac Surgery (Adult)
+Jul 13 13:52:01  [info] admin (172.20.24.125) op.GroupMgr&action=addgroup&name=Cardiac Surgery (Peads)
+Jul 13 13:52:08  [info] admin (172.20.24.125) op.GroupMgr&action=addgroup&name=Cardiac Emergency
+Jul 13 13:52:18  [info] admin (172.20.24.125) op.GroupMgr&action=addgroup&name=Out Patient
+Jul 13 13:52:36  [info] admin (172.20.24.125) op.GroupMgr&action=addgroup&name=InPatient Department
+Jul 13 13:52:53  [info] admin (172.20.24.125) op.GroupMgr?groupid=9&action=editgroup
+Jul 13 13:52:57  [info] admin (172.20.24.125) op.GroupMgr?groupid=10&action=editgroup
+Jul 13 13:53:12  [info] admin (172.20.24.125) op.GroupMgr&action=addgroup&name=Quality Assurance
+Jul 13 13:53:18  [info] admin (172.20.24.125) op.GroupMgr&action=addgroup&name=Audit
+Jul 13 13:53:25  [info] admin (172.20.24.125) op.GroupMgr&action=addgroup&name=Administration
+Jul 13 13:54:43  [info] admin (172.20.24.125) op.UsrMgr.php&action=adduser&login=61
+Jul 13 13:55:52  [info] admin (172.20.24.125) op.UsrMgr.php&action=adduser&login=16
+Jul 13 13:55:59  [info] admin (172.20.24.125) op.UsrMgr.php&action=edituser&userid=4
+Jul 13 13:57:06  [info] admin (172.20.24.125) op.UsrMgr.php&action=adduser&login=24
+Jul 13 13:58:19  [info] admin (172.20.24.125) op.UsrMgr.php&action=adduser&login=26
+Jul 13 13:58:56  [info] admin (172.20.24.125) op.AddSubFolder?name=ICT&folderid=1
+Jul 13 13:59:03  [info] admin (172.20.24.125) op.Ajax.php?command=deletefolder&id=2&formtoken=fa8195652efd579d37f58dfd7081d194
+Jul 13 13:59:12  [info] -- (172.20.24.125) op.Login
+Jul 13 13:59:21  [info] 16 (172.20.24.125) op.AddSubFolder?name=ICT&folderid=1
+Jul 13 13:59:51  [info] 16 (172.20.24.125) op.AddSubFolder?name=Management of Information&folderid=3
+Jul 13 14:00:13  [info] 16 (172.20.24.125) op.EditFolder?folderid=4
+Jul 13 14:00:25  [info] 16 (172.20.24.125) op.AddSubFolder?name=MOI - Management of Information&folderid=4
+Jul 13 14:00:41  [info] 16 (172.20.24.125) op.AddSubFolder?name=Policies&folderid=5
+Jul 13 14:00:49  [info] 16 (172.20.24.125) op.AddSubFolder?name=SOPs&folderid=5
+Jul 13 14:01:00  [info] 16 (172.20.24.125) op.AddSubFolder?name=Forms&folderid=5
+Jul 13 14:01:26  [info] 16 (172.20.24.125) op.AddSubFolder?name=HMIS&folderid=3
+Jul 13 14:02:03  [info] 16 (172.20.24.125) op.AddSubFolder?name=Releases&folderid=9
+Jul 13 14:03:04  [info] -- (172.20.24.125) op.Login
+Jul 13 14:03:22  [info] 26 (172.20.24.125) op.AddSubFolder?name=Finance&folderid=1
+Jul 13 14:04:27  [info] -- (172.20.24.125) op.Login
+Jul 13 14:05:13  [info] admin (172.20.24.125) op.UsrMgr.php&action=adduser&login=639
+Jul 13 14:05:21  [info] admin (172.20.24.125) op.UsrMgr.php&action=edituser&userid=6
+Jul 13 14:05:43  [info] -- (172.20.24.125) op.Login
+Jul 13 14:06:11  [info] -- (172.20.24.125) op.Login
+Jul 13 14:06:23  [info] admin (172.20.24.125) op.UsrMgr.php&action=edituser&userid=7
+Jul 13 14:06:31  [info] -- (172.20.24.125) op.Login
+Jul 13 14:06:40  [info] 639 (172.20.24.125) op.AddSubFolder?name=Quality Assurance&folderid=1
+Jul 13 14:07:17  [info] -- (172.20.24.125) op.Login
+Jul 13 14:10:51  [error] Notification service 'email': Sending notification 'review_request_email_subject' to user 'sunnan.fazal@pic.edu.pk' (3) failed.
+Jul 13 14:10:51  [info] 16 (172.20.24.125) op.AddDocument?name=UAT Release&folderid=10
+Jul 13 14:11:09  [info] 16 (172.20.24.125) op.Ajax.php?command=tooglelockdocument&id=1
+Jul 13 14:11:26  [info] -- (172.20.24.125) op.Login
+Jul 13 14:11:50  [info] -- (172.20.24.125) op.Login
+Jul 13 14:12:13  [info] 16 (172.20.24.125) op.EditDocument?documentid=1
+Jul 13 14:12:33  [info] 16 (172.20.24.125) op.EditDocument?documentid=1
+Jul 13 14:12:48  [info] -- (172.20.24.125) op.Login
+Jul 13 14:13:59  [error] Notification service 'email': Sending notification 'approval_request_email_subject' to user 'sunnan.fazal@pic.edu.pk' (4) failed.
+Jul 13 14:13:59  [error] Notification service 'email': Sending notification 'approval_request_email_subject' to user 'majid.khan@pic.edu.pk' (4) failed.
+Jul 13 14:14:26  [info] guest (172.20.24.125) op.Download.php?documentid=1&version=1
+Jul 13 14:14:49  [error] Notification service 'email': Sending notification 'approval_submit_email_subject' to user 'muhammad.ali@pic.edu.pk' (2) failed.
+Jul 13 14:14:49  [info] 61 (172.20.24.125) op.ApproveDocument?documentid=1&version=1&approvalType=ind&approvalStatus=1
+Jul 13 14:15:16  [info] -- (::1) op.Login
+Jul 13 14:15:58  [info] 16 (::1) op.LockDocument.php?documentid=1
+Jul 13 14:16:12  [info] 61 (172.20.24.125) op.Download.php?documentid=1&version=1
+Jul 13 14:16:34  [info] 16 (::1) op.UnlockDocument.php?documentid=1
+Jul 13 14:16:44  [info] 16 (::1) op.DocumentAccess.php?formtoken=a6f447c5613a13f15af7c241429ba3dc&documentid=1&action=notinherit&mode=empty
+Jul 13 14:17:01  [info] 16 (::1) op.DocumentAccess.php?formtoken=a6f447c5613a13f15af7c241429ba3dc&documentid=1&action=addaccess&userid=3&groupid=1&mode=1
+Jul 13 14:17:14  [info] -- (172.20.24.125) op.Login
+Jul 13 14:17:25  [info] 16 (::1) op.DocumentAccess.php?mode=2&formtoken=a6f447c5613a13f15af7c241429ba3dc&documentid=1&action=editaccess&userid=3
+Jul 13 14:17:33  [info] 16 (::1) op.DocumentAccess.php?mode=3&formtoken=a6f447c5613a13f15af7c241429ba3dc&documentid=1&action=editaccess&userid=3
+Jul 13 14:17:42  [info] 16 (::1) op.DocumentAccess.php?mode=4&formtoken=a6f447c5613a13f15af7c241429ba3dc&documentid=1&action=editaccess&userid=3
+Jul 13 14:17:49  [info] 16 (::1) op.DocumentAccess.php?mode=1&formtoken=a6f447c5613a13f15af7c241429ba3dc&documentid=1&action=editaccess&userid=3
+Jul 13 14:17:50  [error] 61 (172.20.24.125) out.ViewDocument.php?documentid=1&showtree=1 UI::exitError error=Access denied. pagetitle=Document 'UAT Release'
+Jul 13 14:18:12  [info] 16 (::1) op.FolderAccess.php?formtoken=26d6620d87586be47d27d605685559da&folderid=3&action=notinherit&mode=empty
+Jul 13 14:18:27  [info] 16 (::1) op.FolderAccess.php?formtoken=26d6620d87586be47d27d605685559da&folderid=3&action=setdefault&mode=1
+Jul 13 14:19:32  [info] 16 (::1) op.FolderAccess.php?formtoken=26d6620d87586be47d27d605685559da&folderid=11&action=notinherit&mode=empty
+Jul 13 14:19:43  [info] 16 (::1) op.FolderAccess.php?formtoken=26d6620d87586be47d27d605685559da&folderid=11&action=addaccess&userid=-1&groupid=1&mode=1
+Jul 13 14:20:10  [info] 16 (::1) op.FolderAccess.php?formtoken=26d6620d87586be47d27d605685559da&folderid=11&action=addaccess&userid=3&groupid=1&mode=2
+Jul 13 14:20:28  [info] -- (172.20.24.125) op.Login
+Jul 13 14:20:44  [info] 16 (::1) op.FolderAccess.php?formtoken=26d6620d87586be47d27d605685559da&folderid=11&action=delaccess&groupid=1
+Jul 13 14:20:48  [info] 16 (::1) op.FolderAccess.php?formtoken=26d6620d87586be47d27d605685559da&folderid=11&action=editaccess&userid=3&mode=2
+Jul 13 14:20:53  [info] 16 (::1) op.FolderAccess.php?formtoken=26d6620d87586be47d27d605685559da&folderid=11&action=addaccess&userid=-1&groupid=1&mode=1
+Jul 13 14:22:13  [info] 16 (::1) op.FolderAccess.php?formtoken=26d6620d87586be47d27d605685559da&folderid=3&action=inherit
+Jul 13 14:22:19  [info] -- (172.20.24.125) op.Login
+Jul 13 14:22:34  [error] Notification service 'email': Sending notification 'approval_submit_email_subject' to user 'muhammad.ali@pic.edu.pk' (2) failed.
+Jul 13 14:22:34  [info] 24 (172.20.24.125) op.ApproveDocument?documentid=1&version=1&approvalType=ind&approvalStatus=1
+Jul 13 14:29:08  [error] Notification service 'email': Sending notification 'notify_added_email_subject' to user 'address@server.com' (1) failed.
+Jul 13 14:29:08  [error] Notification service 'email': Sending notification 'notify_added_email_subject' to user 'sunnan.fazal@pic.edu.pk' (1) failed.
+Jul 13 14:29:08  [error] Notification service 'email': Sending notification 'notify_added_email_subject' to user 'muhammad.ali@pic.edu.pk' (1) failed.
+Jul 13 14:29:08  [error] Notification service 'email': Sending notification 'notify_added_email_subject' to user 'majid.khan@pic.edu.pk' (1) failed.
+Jul 13 14:30:16  [info] 16 (::1) op.FolderAccess.php?formtoken=26d6620d87586be47d27d605685559da&folderid=11&action=delaccess&userid=3
+Jul 13 14:30:17  [info] 16 (::1) op.FolderAccess.php?formtoken=26d6620d87586be47d27d605685559da&folderid=11&action=delaccess&groupid=1
+Jul 13 14:31:15  [error] Notification service 'email': Sending notification 'new_document_email_subject' to user 'sunnan.fazal@pic.edu.pk' (1) failed.
+Jul 13 14:31:15  [error] Notification service 'email': Sending notification 'new_document_email_subject' to user 'address@server.com' (1) failed.
+Jul 13 14:31:15  [error] Notification service 'email': Sending notification 'new_document_email_subject' to user 'sunnan.fazal@pic.edu.pk' (1) failed.
+Jul 13 14:31:15  [error] Notification service 'email': Sending notification 'new_document_email_subject' to user 'muhammad.ali@pic.edu.pk' (1) failed.
+Jul 13 14:31:15  [error] Notification service 'email': Sending notification 'new_document_email_subject' to user 'majid.khan@pic.edu.pk' (1) failed.
+Jul 13 14:31:15  [error] Notification service 'email': Sending notification 'review_request_email_subject' to user 'majid.khan@pic.edu.pk' (3) failed.
+Jul 13 14:31:15  [info] 16 (::1) op.AddDocument?name=Test Release&folderid=10
+Jul 13 14:31:20  [info] 16 (::1) op.Ajax.php?command=tooglelockdocument&id=2
+Jul 13 14:31:46  [error] Notification service 'email': Sending notification 'notify_added_email_subject' to user 'majid.khan@pic.edu.pk' (1) failed.
+Jul 13 14:32:10  [error] Notification service 'email': Sending notification 'notify_added_email_subject' to user 'address@server.com' (1) failed.
+Jul 13 14:32:10  [error] Notification service 'email': Sending notification 'notify_added_email_subject' to user 'sunnan.fazal@pic.edu.pk' (1) failed.
+Jul 13 14:32:10  [error] Notification service 'email': Sending notification 'notify_added_email_subject' to user 'muhammad.ali@pic.edu.pk' (1) failed.
+Jul 13 14:32:10  [error] Notification service 'email': Sending notification 'notify_added_email_subject' to user 'majid.khan@pic.edu.pk' (1) failed.
+Jul 13 14:32:24  [error] Notification service 'email': Sending notification 'review_submit_email_subject' to user 'sunnan.fazal@pic.edu.pk' (1) failed.
+Jul 13 14:32:24  [error] Notification service 'email': Sending notification 'document_status_changed_email_subject' to user 'sunnan.fazal@pic.edu.pk' (1) failed.
+Jul 13 14:32:24  [error] Notification service 'email': Sending notification 'approval_request_email_subject' to user 'sunnan.fazal@pic.edu.pk' (4) failed.
+Jul 13 14:32:53  [info] -- (172.20.24.125) op.Login
+Jul 13 14:34:04  [error] Notification service 'email': Sending notification 'approval_submit_email_subject' to user 'muhammad.ali@pic.edu.pk' (2) failed.
+Jul 13 14:34:04  [error] Notification service 'email': Sending notification 'approval_submit_email_subject' to user 'sunnan.fazal@pic.edu.pk' (1) failed.
+Jul 13 14:34:04  [error] Notification service 'email': Sending notification 'document_status_changed_email_subject' to user 'sunnan.fazal@pic.edu.pk' (1) failed.
+Jul 13 14:34:04  [info] 61 (172.20.24.125) op.ApproveDocument?documentid=2&version=2&approvalType=ind&approvalStatus=1
+Jul 13 14:34:54  [info] 16 (::1) op.LockDocument.php?documentid=2
+Jul 13 14:35:07  [error] Notification service 'email': Sending notification 'access_permission_changed_email_subject' to user 'sunnan.fazal@pic.edu.pk' (1) failed.
+Jul 13 14:35:07  [info] 16 (::1) op.DocumentAccess.php?formtoken=a6f447c5613a13f15af7c241429ba3dc&documentid=2&action=notinherit&mode=empty
+Jul 13 14:35:10  [error] Notification service 'email': Sending notification 'access_permission_changed_email_subject' to user 'sunnan.fazal@pic.edu.pk' (1) failed.
+Jul 13 14:35:10  [info] 16 (::1) op.DocumentAccess.php?formtoken=a6f447c5613a13f15af7c241429ba3dc&documentid=2&action=setdefault&mode=1
+Jul 13 14:35:12  [error] guest (172.20.24.125) out.ViewDocument.php?documentid=2&showtree=1 UI::exitError error=Access denied. pagetitle=Document 'Test Release'
+Jul 13 14:35:39  [info] -- (172.20.24.125) op.Login
+Jul 13 14:35:49  [info] 16 (::1) op.DocumentAccess.php?formtoken=a6f447c5613a13f15af7c241429ba3dc&documentid=2&action=addaccess&userid=3&groupid=-1&mode=2
+Jul 13 14:35:58  [info] -- (172.20.24.125) op.Login
+Jul 13 14:36:36  [error] Notification service 'email': Sending notification 'document_moved_email_subject' to user 'sunnan.fazal@pic.edu.pk' (1) failed.
+Jul 13 14:36:36  [error] Notification service 'email': Sending notification 'document_moved_email_subject' to user 'address@server.com' (1) failed.
+Jul 13 14:36:36  [error] Notification service 'email': Sending notification 'document_moved_email_subject' to user 'sunnan.fazal@pic.edu.pk' (1) failed.
+Jul 13 14:36:36  [error] Notification service 'email': Sending notification 'document_moved_email_subject' to user 'muhammad.ali@pic.edu.pk' (1) failed.
+Jul 13 14:36:36  [error] Notification service 'email': Sending notification 'document_moved_email_subject' to user 'majid.khan@pic.edu.pk' (1) failed.
+Jul 13 14:36:36  [info] 16 (::1) op.MoveDocument.php?formtoken=b15457c51c3c21b7b26689d2bf1d5465&documentid=2&targetid=11&targetname3f0d3ca8e81787497acc8c0e731ab0c8=Finance
+Jul 13 14:42:39  [info] 16 (::1) op.Settings.php&action=savesettings
+Jul 13 14:43:31  [error] 16 (::1) op.WorkflowMgr UI::exitError error=An error has occurred pagetitle=Admin-Tools
+Jul 13 14:44:12  [info] 16 (::1) op.Settings.php&action=savesettings
+Jul 13 14:45:05  [error] Notification service 'email': Sending notification 'new_document_email_subject' to user 'sunnan.fazal@pic.edu.pk' (1) failed.
+Jul 13 14:45:05  [error] Notification service 'email': Sending notification 'new_document_email_subject' to user 'muhammad.ali@pic.edu.pk' (1) failed.
+Jul 13 14:45:05  [error] Notification service 'email': Sending notification 'new_document_email_subject' to user 'address@server.com' (1) failed.
+Jul 13 14:45:05  [error] Notification service 'email': Sending notification 'new_document_email_subject' to user 'sunnan.fazal@pic.edu.pk' (1) failed.
+Jul 13 14:45:05  [error] Notification service 'email': Sending notification 'new_document_email_subject' to user 'muhammad.ali@pic.edu.pk' (1) failed.
+Jul 13 14:45:05  [error] Notification service 'email': Sending notification 'new_document_email_subject' to user 'majid.khan@pic.edu.pk' (1) failed.
+Jul 13 14:45:05  [error] Notification service 'email': Sending notification 'review_request_email_subject' to user 'sunnan.fazal@pic.edu.pk' (3) failed.
+Jul 13 14:45:05  [info] 16 (::1) op.AddDocument?name=TEst&folderid=10
+Jul 13 14:45:15  [info] 16 (::1) op.Download.php?documentid=3&version=4
+Jul 13 14:45:26  [info] -- (172.20.24.125) op.Login
+Jul 13 14:45:33  [error] Notification service 'email': Sending notification 'notify_added_email_subject' to user 'sunnan.fazal@pic.edu.pk' (1) failed.
+Jul 13 14:45:48  [error] Notification service 'email': Sending notification 'notify_added_email_subject' to user 'sunnan.fazal@pic.edu.pk' (1) failed.
+Jul 13 14:46:04  [error] Notification service 'email': Sending notification 'review_submit_email_subject' to user 'sunnan.fazal@pic.edu.pk' (1) failed.
+Jul 13 14:46:04  [error] Notification service 'email': Sending notification 'review_submit_email_subject' to user 'muhammad.ali@pic.edu.pk' (1) failed.
+Jul 13 14:46:04  [error] Notification service 'email': Sending notification 'document_status_changed_email_subject' to user 'sunnan.fazal@pic.edu.pk' (1) failed.
+Jul 13 14:46:04  [error] Notification service 'email': Sending notification 'document_status_changed_email_subject' to user 'muhammad.ali@pic.edu.pk' (1) failed.
+Jul 13 14:46:04  [error] Notification service 'email': Sending notification 'approval_request_email_subject' to user 'sunnan.fazal@pic.edu.pk' (4) failed.
+Jul 13 14:46:06  [error] Notification service 'email': Sending notification 'approval_submit_email_subject' to user 'muhammad.ali@pic.edu.pk' (2) failed.
+Jul 13 14:46:06  [error] Notification service 'email': Sending notification 'approval_submit_email_subject' to user 'sunnan.fazal@pic.edu.pk' (1) failed.
+Jul 13 14:46:06  [error] Notification service 'email': Sending notification 'approval_submit_email_subject' to user 'muhammad.ali@pic.edu.pk' (1) failed.
+Jul 13 14:46:06  [error] Notification service 'email': Sending notification 'document_status_changed_email_subject' to user 'sunnan.fazal@pic.edu.pk' (1) failed.
+Jul 13 14:46:06  [error] Notification service 'email': Sending notification 'document_status_changed_email_subject' to user 'muhammad.ali@pic.edu.pk' (1) failed.
+Jul 13 14:46:06  [info] 61 (172.20.24.125) op.ApproveDocument?documentid=3&version=4&approvalType=ind&approvalStatus=1
+Jul 13 14:47:08  [info] 16 (::1) op.DocumentAccess.php?mode=1&formtoken=a6f447c5613a13f15af7c241429ba3dc&documentid=2&action=editaccess&userid=3
+Jul 13 14:47:09  [error] 61 (172.20.24.125) out.ViewDocument.php?documentid=2&showtree=1 UI::exitError error=Access denied. pagetitle=Document 'Test Release'
